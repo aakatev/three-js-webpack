@@ -14,9 +14,9 @@ npm i
 Start webpack development server
 
 ```bash
-npm run build:dev
+npm run start
 ```
-## Bundling
+## Deployment
 
 Run prettier
 
