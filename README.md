@@ -11,18 +11,11 @@ git clone https://github.com/aakatev/three-js-webpack.git
 npm i
 ```
 
-Start webpack in watch mode
+Start webpack development server
 
 ```bash
 npm run build:dev
 ```
-
-Start a server
-
-```bash
-npm run serve
-```
-
 ## Bundling
 
 Run prettier

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "build:dev": "webpack --config webpack.config.js -w",
-    "serve": "npx serve",
+    "start": "webpack-dev-server",
     "format": "prettier --write '**/*.js'"
   },
   "keywords": [],
@@ -18,6 +17,7 @@
   "devDependencies": {
     "prettier": "^2.0.4",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
