@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "build:dev": "webpack --config webpack.config.js -w",
+    "serve": "npx serve",
     "format": "prettier --write '**/*.js'"
   },
   "keywords": [],
