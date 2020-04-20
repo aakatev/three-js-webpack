@@ -1,0 +1,22 @@
+{
+  "name": "three-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:dev": "webpack --config webpack.config.js -w",
+    "format": "prettier --write '**/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.115.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
