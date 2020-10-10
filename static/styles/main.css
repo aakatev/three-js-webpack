@@ -19,6 +19,10 @@ code {
   font-size: 105%;
 }
 
+p {
+  overflow: scroll;
+}
+
 .float {
 	position:fixed;
 	width:60px;
