@@ -3,13 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<style>
-			body { margin: 0; }
-			canvas { display: block; }
-		</style>
-    <title>Three JS Boilerplate</title>
+    <link rel="stylesheet" href="static/styles/main.css">
+    <title>Three.JS-Webpack Boilerplate</title>
   </head>
   <body>
+    <!-- Information modal -->
+    <a id="open-modal-btn" class="float">
+      <i class="icon-float material-icons">menu</i>
+    </a>
+    <div id="info-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal-btn">&times;</span>
+        <h3>Welcome to my Three.JS-Webpack boilerplate!</h3>
+        <p>It is a great and easy way to bootstrap Three.Js project.</p>
+        <p>To get started clone the repo <code>git clone https://github.com/aakatev/three-js-webpack.git</code>.</p>
+        <p>For more information, navigate to the <a href="https://github.com/aakatev/three-js-webpack">project GitHub page</a>!</p>
+      </div>
+    </div>
+    <!-- End information modal -->
+
     <script src="public/bundle.js"></script>
   </body>
 </html>

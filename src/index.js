@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import { WEBGL } from './webgl'
+import './modal'
 
 if (WEBGL.isWebGLAvailable()) {
   var camera, scene, renderer
@@ -45,7 +46,7 @@ if (WEBGL.isWebGLAvailable()) {
     cubeGeo = new THREE.BoxBufferGeometry(50, 50, 50)
     cubeMaterial = new THREE.MeshLambertMaterial({
       color: 0xfeb74c,
-      map: new THREE.TextureLoader().load('textures/square.png'),
+      map: new THREE.TextureLoader().load('static/textures/square.png'),
     })
 
     // grid
