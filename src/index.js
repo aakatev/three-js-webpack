@@ -30,8 +30,6 @@ if (WEBGL.isWebGLAvailable()) {
     scene = new THREE.Scene()
     scene.background = new THREE.Color(0xf0f0f0)
 
-    // roll-over helpers
-
     var rollOverGeo = new THREE.BoxBufferGeometry(50, 50, 50)
     rollOverMaterial = new THREE.MeshBasicMaterial({
       color: 0xff0000,
@@ -41,20 +39,14 @@ if (WEBGL.isWebGLAvailable()) {
     rollOverMesh = new THREE.Mesh(rollOverGeo, rollOverMaterial)
     scene.add(rollOverMesh)
 
-    // cubes
-
     cubeGeo = new THREE.BoxBufferGeometry(50, 50, 50)
     cubeMaterial = new THREE.MeshLambertMaterial({
       color: 0xfeb74c,
       map: new THREE.TextureLoader().load('static/textures/square.png'),
     })
 
-    // grid
-
     var gridHelper = new THREE.GridHelper(1000, 20)
     scene.add(gridHelper)
-
-    //
 
     raycaster = new THREE.Raycaster()
     mouse = new THREE.Vector2()
@@ -69,8 +61,6 @@ if (WEBGL.isWebGLAvailable()) {
     scene.add(plane)
 
     objects.push(plane)
-
-    // lights
 
     var ambientLight = new THREE.AmbientLight(0x606060)
     scene.add(ambientLight)
@@ -88,9 +78,6 @@ if (WEBGL.isWebGLAvailable()) {
     document.addEventListener('mousedown', onDocumentMouseDown, false)
     document.addEventListener('keydown', onDocumentKeyDown, false)
     document.addEventListener('keyup', onDocumentKeyUp, false)
-
-    //
-
     window.addEventListener('resize', onWindowResize, false)
   }
 
@@ -142,8 +129,6 @@ if (WEBGL.isWebGLAvailable()) {
     if (intersects.length > 0) {
       var intersect = intersects[0]
 
-      // delete cube
-
       if (isShiftDown) {
         if (intersect.object !== plane) {
           scene.remove(intersect.object)
@@ -151,7 +136,6 @@ if (WEBGL.isWebGLAvailable()) {
           objects.splice(objects.indexOf(intersect.object), 1)
         }
 
-        // create cube
       } else {
         var voxel = new THREE.Mesh(cubeGeo, cubeMaterial)
         voxel.position.copy(intersect.point).add(intersect.face.normal)
