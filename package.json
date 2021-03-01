@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.115.0"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "prettier": "^2.0.4",
